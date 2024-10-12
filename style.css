@@ -1,6 +1,162 @@
+/* Root variables for fonts and colors */
+:root {
+    /* Fonts */
+    --font-small: 0.75rem;
+    --font-medium: 1rem;
+    --font-big: 1.25rem;
+    /* Colors */
+    --black: #333;
+    --soft-pink: #FEC5BB;
+    --light-pink: #FCD5CE;
+    --pale-pink: #FAE1DD;
+    --dusty-rose: #F8EDEB;
+    --light-gray: #E8E8E4;
+    --soft-gray: #D8E2DC;
+    --light-sand: #ECE4DB;
+    --peach-blush: #FFE5D9;
+    --soft-peach: #FFD7BA;
+    --warm-peach: #FEC89A;
+}
+
+/* Global reset and basic styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
+    color: var(--black);
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background-color: var(--light-sand);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 2% 3% 3%;
+}
+
+/* Header: Month container and chevrons */
+.month-container {
+    background-color: var(--soft-gray);
+    padding: 0.5%;
+    border-radius: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 30%;
+    min-width: 10rem;
+    margin-bottom: 1rem;
+}
+
+.chevron {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    background-color: var(--dusty-rose);
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+}
+
+.month {
+    font-weight: 100;
+    text-transform: uppercase;
+}
+
+/* Shared styles for month title and chevrons */
+.chevron, .month {
+    font-size: var(--font-medium);
+}
+
+/* Weekdays styling */
+.weekdays {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    grid-column: span 7;
+}
+
+/* Calendar container and grid layout */
+.calendar-container {
+    background-color: var(--soft-gray);
+    width: 100%;
+    height: 100%;
+    padding: 2%;
+    padding-top: 1%;
+    border-radius: 0.5rem;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 0.25rem;
+}
+
+/* Calendar day boxes */
+.calendar-box {
+    background-color: var(--dusty-rose);
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.25rem;
+    min-height: 5rem;
+    padding: 0.5rem;
+}
+
+/* Hover effect for calendar boxes */
+.calendar-box:hover {
+    background-color: var(--light-sand);
+}
+
+/* Date styling inside calendar boxes */
+.date {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: var(--font-big);
+    font-weight: 900;
+}
+
+/* Styling for individual entries inside calendar boxes */
+ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.entry {
+    font-size: var(--font-small);
+    list-style: none;
+    padding: 0.25rem 0.5rem;
+    border-radius: 1rem;
+}
+
+/* Background colors for entries */
+.color-1 {
+    background-color: var(--soft-pink);
+}
+
+.color-2 {
+    background-color: var(--light-pink);
+}
+
+.color-3 {
+    background-color: var(--peach-blush);
+}
+
+.color-4 {
+    background-color: var(--light-gray);
+}
+
+/* Weekday names styling */
+.days {
+    font-size: 0.75rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--tertiary-color);
 }
