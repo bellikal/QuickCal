@@ -20,7 +20,7 @@ Ich plane, eine Funktion hinzuzufügen, mit der Nutzer Termine eintragen und lö
 ### Installation
 1. Klone das Repository:
    ```bash
-   git clone https://github.com/dein-benutzername/quickcal.git
+   git clone https://github.com/bellikal/QuickCal.git
    ```
 
 2. Öffne die `index.html` Datei in deinem Browser, um die Anwendung zu starten.
@@ -58,7 +58,7 @@ I plan to add a feature that allows users to add and delete events. These events
 ### Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/quickcal.git
+   git clone https://github.com/bellikal/QuickCal.git
    ```
 
 2. Open the `index.html` file in your browser to start the application.
