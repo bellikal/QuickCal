@@ -76,20 +76,28 @@ body {
 
 /* Weekdays styling */
 .weekdays {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
     width: 100%;
     grid-column: span 7;
 }
 
 /* Calendar container and grid layout */
 .calendar-container {
+    display: flex;
+    flex-direction: column;
     background-color: var(--soft-gray);
     width: 100%;
     height: 100%;
     padding: 2%;
-    padding-top: 1%;
+    border-radius: 0.5rem;
+    gap: 1rem;
+}
+
+.calendar-boxes {
+    background-color: var(--soft-gray);
+    width: 100%;
+    height: 100%;
     border-radius: 0.5rem;
     display: grid;
     grid-template-columns: repeat(7, 1fr);
@@ -109,6 +117,10 @@ body {
 /* Hover effect for calendar boxes */
 .calendar-box:hover {
     background-color: var(--light-sand);
+}
+
+.current {
+    background-color: var(--soft-peach);
 }
 
 /* Date styling inside calendar boxes */

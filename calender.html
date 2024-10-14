@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>QuickCal - Your Simple Calendar App</title>
@@ -13,17 +13,16 @@
     <header class="month-container">
         <!-- Left chevron for previous month -->
         <span class="chevron prev-month" aria-label="Previous month">&#x276E;</span>
-        
+
         <!-- Current Month -->
-        <h2 class="month">October</h2>
-        
+        <h2 class="month"></h2>
+
         <!-- Right chevron for next month -->
         <span class="chevron next-month" aria-label="Next month">&#x276F;</span>
     </header>
 
     <!-- Section to contain the calendar grid -->
     <section class="calendar-container">
-
         <!-- Weekdays -->
         <ul class="weekdays">
             <li class="days">Mo</li>
@@ -36,49 +35,7 @@
         </ul>
 
         <!-- Calendar days boxes -->
-        <article class="calendar-box">
-            <!-- Date -->
-            <h2 class="date">1</h2>
-            <!-- Associated tasks -->
-            <ul class="entries">
-                <li class="entry color-1">Mom's Birthday</li>
-                <li class="entry color-2">Bob's Birthday</li>
-                <li class="entry color-3">Sandy's Birthday</li>
-                <li class="entry color-4">Anita's Birthday</li>
-            </ul>
-        </article>
-
-        <!-- Additional calendar boxes for remaining days -->
-        <article class="calendar-box"><h3 class="date">2</h3></article>
-        <article class="calendar-box"><h3 class="date">3</h3></article>
-        <article class="calendar-box"><h3 class="date">4</h3></article>
-        <article class="calendar-box"><h3 class="date">5</h3></article>
-        <article class="calendar-box"><h3 class="date">6</h3></article>
-        <article class="calendar-box"><h3 class="date">7</h3></article>
-        <article class="calendar-box"><h3 class="date">8</h3></article>
-        <article class="calendar-box"><h3 class="date">9</h3></article>
-        <article class="calendar-box"><h3 class="date">10</h3></article>
-        <article class="calendar-box"><h3 class="date">11</h3></article>
-        <article class="calendar-box"><h3 class="date">12</h3></article>
-        <article class="calendar-box"><h3 class="date">13</h3></article>
-        <article class="calendar-box"><h3 class="date">14</h3></article>
-        <article class="calendar-box"><h3 class="date">15</h3></article>
-        <article class="calendar-box"><h3 class="date">16</h3></article>
-        <article class="calendar-box"><h3 class="date">17</h3></article>
-        <article class="calendar-box"><h3 class="date">18</h3></article>
-        <article class="calendar-box"><h3 class="date">19</h3></article>
-        <article class="calendar-box"><h3 class="date">20</h3></article>
-        <article class="calendar-box"><h3 class="date">21</h3></article>
-        <article class="calendar-box"><h3 class="date">22</h3></article>
-        <article class="calendar-box"><h3 class="date">23</h3></article>
-        <article class="calendar-box"><h3 class="date">24</h3></article>
-        <article class="calendar-box"><h3 class="date">25</h3></article>
-        <article class="calendar-box"><h3 class="date">26</h3></article>
-        <article class="calendar-box"><h3 class="date">27</h3></article>
-        <article class="calendar-box"><h3 class="date">28</h3></article>
-        <article class="calendar-box"><h3 class="date">29</h3></article>
-        <article class="calendar-box"><h3 class="date">30</h3></article>
-        <article class="calendar-box"><h3 class="date">31</h3></article>
+        <section class="calendar-boxes"></section>
     </section>
 
     <!-- Link to external JavaScript file -->
@@ -86,4 +43,3 @@
 </body>
 
 </html>
-
