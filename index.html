@@ -13,20 +13,21 @@
 </head>
 
 <body>
-    <!-- Main heading for the current month -->
-    <header class="month-container">
-        <!-- Left chevron for previous month -->
-        <span class="chevron prev-month" aria-label="Previous month">&#x25C0;</span>
-
-        <!-- Current Month -->
-        <h2 class="month"></h2>
-
-        <!-- Right chevron for next month -->
-        <span class="chevron next-month" aria-label="Next month">&#x25B6;</span>
-    </header>
 
     <!-- Section to contain the calendar grid -->
     <section class="calendar-container">
+        <!-- Main heading for the current month -->
+        <header class="month-container">
+            <!-- Left chevron for previous month -->
+            <button class="chevron prev-month" aria-label="Previous month">&#x25C0;</button>
+
+            <!-- Current Month -->
+            <h2 class="month"></h2>
+
+            <!-- Right chevron for next month -->
+            <button class="chevron next-month" aria-label="Next month">&#x25B6;</button>
+        </header>
+
         <!-- Weekdays -->
         <ul class="weekdays">
             <li class="days">Mo</li>
@@ -41,7 +42,25 @@
         <!-- Calendar days boxes -->
         <section class="calendar-boxes"></section>
 
-        <section class="entry-container "></section>
+        <section class="entry-container ">
+            <ul class="entries">
+                <li class="entry light-sand"><span class="time">12:00</span>Mom's Birthday <button class="delete-button">&#x2715;</button></li>
+                <li class="entry soft-peach">Mom's Birthday dubi du<button class="delete-button">&#x2715;</button></li>
+                <li class="entry light-pink">Mom's Birthday <button class="delete-button">&#x2715;</button></li>
+                <li class="entry light-gray">Mom's Birthday <button class="delete-button">&#x2715;</button></li>
+                <li class="entry light-sand">Mom's Birthday <button class="delete-button">&#x2715;</button></li>
+            </ul>
+
+            <button class="add-button">&#x002B; Add Date</button>
+
+            <section class="hidden">
+                <form class="input-container">
+                    <input type="time" id="date-time" name="date-time" value=${currentTime} />
+                    <input type="text" id="date-input" placeholder="Enter new date . . .">
+                    <button class="add-button">Save</button>
+                </form>
+            </section>
+        </section>
     </section>
 
 
@@ -50,6 +69,7 @@
         <div class="color light-pink">light-pink</div>
         <div class="color pale-pink">pale-pink</div>
         <div class="color dusty-rose">dusty-rose</div>
+        <div class="color pale-rose">pale-rose</div>
         <div class="color light-gray">light-gray</div>
         <div class="color soft-gray">soft-gray</div>
         <div class="color light-sand">light-sand</div>

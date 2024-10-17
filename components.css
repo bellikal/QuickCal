@@ -4,29 +4,28 @@
 }
 
 /* Shared styles for month title and chevrons */
-.chevron, .month {
+.chevron,
+.month {
     font-size: var(--font-big);
 }
 
 /* Header: Month container and chevrons */
 .month-container {
-    background-color: var(--pale-pink);
-    padding: 2%;
-    border-radius: 1rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 40%;
-    min-width: 10rem;
+    padding-top: 0.5rem;
+    padding-bottom: 1.5rem;
 }
 
-.month-container, .calendar-container {
+.calendar-container {
     box-shadow: 0 3px 25px #e0c7c3;
 }
 
 .month {
     font-size: 1.5rem;
-    font-weight: 200;
+    font-weight: 400;
     text-transform: uppercase;
     text-align: center;
 }
@@ -55,4 +54,55 @@
     align-items: center;
     justify-content: center;
     color: var(--tertiary-color);
+}
+
+/* Common button base styles */
+button {
+    width: fit-content;
+    border: 0;
+    background: transparent;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.delete-button {
+    background: transparent;
+}
+
+.input-container {
+    display: flex;
+    gap: 0.5rem;
+}
+
+/* Shared styles for Add button and inputs */
+.add-button,
+#date-input, #date-time {
+    font-size: 1.25rem;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    height: 4rem;
+    line-height: 1; 
+}
+
+/* Specific styles for the Add button */
+.add-button {
+    background-color: var(--soft-pink);
+    align-self: flex-end;
+    transition: background-color 0.3s ease; 
+}
+
+.add-button:hover {
+    background-color: var(--light-pink); 
+}
+
+/* Input and date field styles */
+#date-input, #date-time {
+    border: 2px solid var(--light-pink);
+    background-color: var(--dusty-rose);
+    width: 100%;
+}
+
+/* Specific width for the date-time field */
+#date-time {
+    width: 20%;
 }

@@ -1,38 +1,35 @@
 /* Container for entries inside calendar boxes */
 .entry-container {
-    background-color: var(--dusty-rose);
+    display: flex;
+    flex-direction: column;
+    background-color: var(--pale-rose);
     width: 100%;
     min-height: 10rem;
     border-radius: 0.75rem;
+    padding: 1rem;
+    gap: 1rem;
 }
 
 /* Styling for individual entries inside calendar boxes */
 ul {
     display: flex;
-    flex-direction: column;
     gap: 0.25rem;
 }
 
+.entries {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .entry {
-    font-size: var(--font-small);
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
     list-style: none;
-    padding: 0.25rem 0.5rem;
-    border-radius: 1rem;
-}
-
-/* Background colors for entries */
-.color-1 {
-    background-color: var(--soft-pink);
-}
-
-.color-2 {
-    background-color: var(--light-pink);
-}
-
-.color-3 {
-    background-color: var(--peach-blush);
-}
-
-.color-4 {
-    background-color: var(--light-gray);
+    font-size: 1.25rem;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5rem;
+    width: fit-content;
 }

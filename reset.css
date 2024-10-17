@@ -17,8 +17,8 @@ body {
     flex-direction: column;
     align-items: center;
     width: 100vw;
-    height: 100vh;
-    padding: 5% 15% 3%;
+    max-height: 100vh;
+    padding: 2% 25%;
     gap: 2%;
 }
 
@@ -35,6 +35,9 @@ body {
 }
 .dusty-rose {
     background-color: var(--dusty-rose);
+}
+.pale-rose {
+    background-color: var(--pale-rose);
 }
 .light-gray {
     background-color: var(--light-gray);
