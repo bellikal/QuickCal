@@ -13,11 +13,12 @@ const months = [
 const currentDate = new Date();
 let currentMonth = currentDate.getMonth();
 let currentYear = currentDate.getFullYear();
+let yearShort = currentYear.toString().slice(-2);
 let today = currentDate.getDate()
 
 // Updating the month title
 const updateMonthTitle = () => {
-    monthTitle.textContent = `${months[currentMonth]} ${currentYear}`;
+    monthTitle.textContent = `${months[currentMonth]}`;
 }
 
 updateMonthTitle(); // Set the current month and year title

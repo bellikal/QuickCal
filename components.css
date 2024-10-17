@@ -1,0 +1,58 @@
+/* Global utility classes */
+.hidden {
+    display: none;
+}
+
+/* Shared styles for month title and chevrons */
+.chevron, .month {
+    font-size: var(--font-big);
+}
+
+/* Header: Month container and chevrons */
+.month-container {
+    background-color: var(--pale-pink);
+    padding: 2%;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 40%;
+    min-width: 10rem;
+}
+
+.month-container, .calendar-container {
+    box-shadow: 0 3px 25px #e0c7c3;
+}
+
+.month {
+    font-size: 1.5rem;
+    font-weight: 200;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/* Chevron styling */
+.chevron {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Weekdays styling */
+.weekdays {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    width: 100%;
+    grid-column: span 7;
+}
+
+/* Weekday names styling */
+.days {
+    font-size: var(--font-medium);
+    text-transform: uppercase;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--tertiary-color);
+}

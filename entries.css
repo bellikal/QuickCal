@@ -1,0 +1,38 @@
+/* Container for entries inside calendar boxes */
+.entry-container {
+    background-color: var(--dusty-rose);
+    width: 100%;
+    min-height: 10rem;
+    border-radius: 0.75rem;
+}
+
+/* Styling for individual entries inside calendar boxes */
+ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.entry {
+    font-size: var(--font-small);
+    list-style: none;
+    padding: 0.25rem 0.5rem;
+    border-radius: 1rem;
+}
+
+/* Background colors for entries */
+.color-1 {
+    background-color: var(--soft-pink);
+}
+
+.color-2 {
+    background-color: var(--light-pink);
+}
+
+.color-3 {
+    background-color: var(--peach-blush);
+}
+
+.color-4 {
+    background-color: var(--light-gray);
+}

@@ -1,0 +1,71 @@
+/* Global reset and basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: var(--black);
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background: var(--dusty-rose) ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    padding: 5% 15% 3%;
+    gap: 2%;
+}
+
+/*  */
+/* Color-Boxes - just for working purposes */
+.soft-pink {
+    background-color: var(--soft-pink);
+}
+.light-pink {
+    background-color: var(--light-pink);
+}
+.pale-pink {
+    background-color: var(--pale-pink);
+}
+.dusty-rose {
+    background-color: var(--dusty-rose);
+}
+.light-gray {
+    background-color: var(--light-gray);
+}
+.soft-gray {
+    background-color: var(--soft-gray);
+}
+.light-sand {
+    background-color: var(--light-sand);
+}
+.peach-blush {
+    background-color: var(--peach-blush);
+}
+.soft-peach {
+    background-color: var(--soft-peach);
+}
+.warm-peach {
+    background-color: var(--warm-peach);
+}
+
+.colors {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.color {
+    width: 6rem;
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*  */

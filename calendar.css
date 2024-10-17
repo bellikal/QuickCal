@@ -1,0 +1,49 @@
+/* Calendar container and layout */
+.calendar-container {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--soft-pink);
+    width: 100%;
+    padding: 3%;
+    border-radius: 1rem;
+    gap: 1rem;
+}
+
+.calendar-boxes {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(7, minmax(0, 1fr));
+    grid-auto-rows: 1fr;
+    gap: 0.5rem;
+}
+
+/* Calendar day boxes */
+.calendar-box {
+    aspect-ratio: 1 / 1;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--dusty-rose);
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+}
+
+/* Hover and active effects for calendar boxes */
+.calendar-box:hover {
+    background-color: var(--light-sand);
+}
+
+.calendar-box:active {
+    background-color: var(--soft-gray);
+}
+
+.current {
+    background-color: var(--peach-blush);
+}
+
+/* Date styling inside calendar boxes */
+.date {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: var(--font-big);
+    font-weight: 900;
+    color: var(--gray);
+}

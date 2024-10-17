@@ -5,20 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>QuickCal - Your Simple Calendar App</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="variables.css">
+    <link rel="stylesheet" href="components.css">
+    <link rel="stylesheet" href="calendar.css">
+    <link rel="stylesheet" href="entries.css">
 </head>
 
 <body>
     <!-- Main heading for the current month -->
     <header class="month-container">
         <!-- Left chevron for previous month -->
-        <span class="chevron prev-month" aria-label="Previous month">&#x276E;</span>
+        <span class="chevron prev-month" aria-label="Previous month">&#x25C0;</span>
 
         <!-- Current Month -->
         <h2 class="month"></h2>
 
         <!-- Right chevron for next month -->
-        <span class="chevron next-month" aria-label="Next month">&#x276F;</span>
+        <span class="chevron next-month" aria-label="Next month">&#x25B6;</span>
     </header>
 
     <!-- Section to contain the calendar grid -->
@@ -27,8 +31,8 @@
         <ul class="weekdays">
             <li class="days">Mo</li>
             <li class="days">Tu</li>
-            <li class="days">Wed</li>
-            <li class="days">Thu</li>
+            <li class="days">We</li>
+            <li class="days">Th</li>
             <li class="days">Fr</li>
             <li class="days">Sa</li>
             <li class="days">Su</li>
@@ -36,7 +40,23 @@
 
         <!-- Calendar days boxes -->
         <section class="calendar-boxes"></section>
+
+        <section class="entry-container "></section>
     </section>
+
+
+    <div class="colors">
+        <div class="color soft-pink">soft-pink</div>
+        <div class="color light-pink">light-pink</div>
+        <div class="color pale-pink">pale-pink</div>
+        <div class="color dusty-rose">dusty-rose</div>
+        <div class="color light-gray">light-gray</div>
+        <div class="color soft-gray">soft-gray</div>
+        <div class="color light-sand">light-sand</div>
+        <div class="color peach-blush">peach-blush</div>
+        <div class="color soft-peach">soft-peach</div>
+        <div class="color warm-peach">warm-peach</div>
+    </div>
 
     <!-- Link to external JavaScript file -->
     <script src="script.js"></script>

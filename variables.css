@@ -1,0 +1,20 @@
+/* Root variables for fonts and colors */
+:root {
+    /* Fonts */
+    --font-small: 0.75rem;
+    --font-medium: 1rem;
+    --font-big: 1.25rem;
+    /* Colors */
+    --black: #3d3d3d;
+    --soft-pink: #FEC5BB;
+    --light-pink: #FCD5CE;
+    --pale-pink: #FAE1DD;
+    --dusty-rose: #F8EDEB;
+    --light-gray: #E8E8E4;
+    --soft-gray: #D8E2DC;
+    --light-sand: #ECE4DB;
+    --peach-blush: #FFE5D9;
+    --soft-peach: #FFD7BA;
+    --warm-peach: #FEC89A;
+}
+
