@@ -2,6 +2,7 @@
 .entry-container {
     display: flex;
     flex-direction: column;
+    justify-content: flex-end;
     background-color: var(--pale-rose);
     width: 100%;
     min-height: 10rem;
@@ -13,6 +14,7 @@
 /* Styling for individual entries inside calendar boxes */
 ul {
     display: flex;
+    width: fit-content;
     gap: 0.25rem;
 }
 
