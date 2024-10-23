@@ -50,32 +50,35 @@ const populateCalendarContent = () => {
     }
 }
 
-// Event listener for handling all button clicks within the calendar
+// Event listener for handling all clicks within the calendar
 calendarContainer.addEventListener("click", (event) => {
-    const clickedButton = event.target;
-    
-    checkClickedButton(clickedButton);
+    const clickedElement = event.target;
+
+    checkClickedElement(clickedElement);
 });
 
-// Function for checking which button is clicked
-const checkClickedButton = (clickedButton) => {
-    if (clickedButton.classList.contains('add-date-button')) {
+// Function for checking which element is clicked
+const checkClickedElement = (clickedElement) => {
+    if (clickedElement.classList.contains('add-date-button')) {
         handleAddDate(); // Show input container for new date
     }
-    else if (clickedButton.classList.contains('save-button')) {
+    else if (clickedElement.classList.contains('save-button')) {
         handleSave(); // Save the new date to the calendar
     }
-    else if (clickedButton.classList.contains('entry-container')) {
+    else if (clickedElement.classList.contains('entry-container')) {
         handleHidingInput(); // Hide input container
     }
-    else if (clickedButton.classList.contains('delete-button')) {
+    else if (clickedElement.classList.contains('delete-button')) {
         handleDelete(); // Delete the corresponding date entry
     }
-    else if (clickedButton.classList.contains('prev-month')) {
+    else if (clickedElement.classList.contains('prev-month')) {
         handlePrevMonth();
     }
-    else if (clickedButton.classList.contains('next-month')) {
+    else if (clickedElement.classList.contains('next-month')) {
         handleNextMonth();
+    }
+    else if (clickedElement.classList.contains('calendar-box') || clickedElement.classList.contains('date')) {
+        handleCalendarBox(clickedElement);
     }
 }
 
@@ -135,6 +138,29 @@ const handleNextMonth = () => {
 const updateCalendar = () => {
     populateMonthTitle(); // Refresh the month label
     populateCalendarContent(); // Refresh the calendar with new day boxes
+}
+
+const entryWrapper = document.querySelector('.entry-wrapper');
+
+const handleCalendarBox = (box) => {
+    let clickedDay = box.textContent.trim();
+    let currentMonthName = months[currentMonth].trim();
+    let currentFullDate = clickedDay + " " + currentMonthName;
+
+    console.log(currentFullDate);
+
+    const allCalendarBoxes = document.querySelectorAll('.calendar-box');
+
+    // Remove the 'active' class from all calendar boxes
+    allCalendarBoxes.forEach(box => {
+        box.classList.remove('active');
+    })
+    
+    // Add the 'active' class only to the clicked article element
+    box.closest('.calendar-box').classList.add('active');
+
+    // Show the area for entering a new appointment
+    entryWrapper.classList.remove('hidden');
 }
 
 updateCalendar(); // Populate calendar and updates the month title
